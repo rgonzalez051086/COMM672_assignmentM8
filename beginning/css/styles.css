@@ -53,7 +53,7 @@ header a:hover {
 }
 header .container {
     padding: 10px;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
@@ -64,7 +64,7 @@ header .container a:first-child {
 }
 header ul {
     list-style-type: none;
-    display: grid;
+    display: flex;
     align-items: center;
 }
 .button {
@@ -87,7 +87,7 @@ body.home {
     background-color: #FFCF83;
 }
 .hero .container {
-    display: grid;
+    display: flex;
     justify-content: space-between;
     padding: 50px 20px;
 }
@@ -95,13 +95,13 @@ body.home {
     width: 300px;
 }
 .hero .hero-text {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
 }
 .feature-container {
-    display: grid;
+    display: flex;
     justify-content: center;
     gap: 50px;
     padding-bottom: 20px;
@@ -138,7 +138,7 @@ body.home {
     width: 80px;
 }
 .team-container {
-    display: grid;
+    display: flex;
     justify-content: space-between;
     gap: 20px;
 }
@@ -233,11 +233,15 @@ footer img {
 
 /* Media Query for Tablet View */
 @media screen and (max-width: 768px) {
+    header {
+    display: none; }
     /* Tablet specific styles will go here */
 }
 
 /* Media Query for Mobile View */
 @media screen and (max-width: 480px) {
+    header {
+        display: none; }
     /* Mobile spacific styles will go here */
 }
 
